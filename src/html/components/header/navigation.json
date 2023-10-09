@@ -1,0 +1,17 @@
+[
+    {
+        "link": "#",
+        "name": "Universitetlar",
+        "submenu": false
+    },
+    {
+        "link": "#",
+        "name": "Kasblar",
+        "submenu": false
+    },
+    {
+        "link": "#",
+        "name": "Loyiha haqida",
+        "submenu": true
+    }
+]
