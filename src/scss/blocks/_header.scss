@@ -1,0 +1,22 @@
+.header {
+	border-bottom: 1px solid #f0f0f0;
+
+	&-inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		box-shadow: 0px 20px 24px 0px #9196ff0d;
+		padding: 12px 0;
+
+		@include breakpoint(md) {
+			padding: 20px 0;
+		}
+	}
+
+	&-logo {
+		display: block;
+		width: 100%;
+		max-width: 100px;
+		height: 26px;
+	}
+}

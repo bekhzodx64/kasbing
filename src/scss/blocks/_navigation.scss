@@ -1,0 +1,25 @@
+.navigation {
+	display: none;
+
+	@include breakpoint(md) {
+		display: block;
+	}
+
+	&-list {
+		display: flex;
+		align-items: center;
+		list-style: none;
+		gap: 48px;
+
+		&__item {
+			display: flex;
+			align-items: center;
+			gap: 16px;
+
+			a {
+				color: #000000;
+				font-weight: 300;
+			}
+		}
+	}
+}

@@ -1,0 +1,22 @@
+[
+    {
+        "icon": "./img/icons/instagram.svg",
+        "name": "Instagram"
+    },
+    {
+        "icon": "./img/icons/tiktok.svg",
+        "name": "TokTok"
+    },
+    {
+        "icon": "./img/icons/utube.svg",
+        "name": "YouTube"
+    },
+    {
+        "icon": "./img/icons/telegram.svg",
+        "name": "Telegram"
+    },
+    {
+        "icon": "./img/icons/facebook.svg",
+        "name": "Facebook"
+    }
+]

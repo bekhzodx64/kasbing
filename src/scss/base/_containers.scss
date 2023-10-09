@@ -1,0 +1,43 @@
+.container {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 20px;
+
+	@include breakpoint(sm) {
+		max-width: 640px;
+	}
+	@include breakpoint(md) {
+		max-width: 768px;
+	}
+	@include breakpoint(lg) {
+		max-width: 1024px;
+	}
+	@include breakpoint(xl) {
+		max-width: 1280px;
+	}
+	@include breakpoint(xxl) {
+		max-width: 1536px;
+	}
+}
+
+.container-right {
+	/* overflow-x: hidden; */
+	padding-left: calc(
+		(100% - var(--container-width)) / 2 + var(--container-padding)
+	);
+
+	@media (max-width: var(--laptop-size)) {
+		padding-left: var(--container-padding);
+	}
+}
+
+.container-left {
+	/* overflow-x: hidden; */
+	padding-right: calc(
+		(100% - var(--container-width)) / 2 + var(--container-padding)
+	);
+
+	@media (max-width: var(--laptop-size)) {
+		padding-right: var(--container-padding);
+	}
+}

@@ -1,0 +1,8 @@
+.hamburger {
+	background-color: transparent;
+	border: none;
+
+	@include breakpoint(md) {
+		display: none;
+	}
+}
