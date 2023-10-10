@@ -53,7 +53,14 @@
 					align-items: center;
 					gap: 10px;
 					color: $white;
-					font-size: 18px;
+
+					@include breakpoint(md) {
+						font-size: 14px;
+					}
+
+					@include breakpoint(lg) {
+						font-size: 18px;
+					}
 				}
 			}
 		}
