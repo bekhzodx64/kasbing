@@ -1,0 +1,54 @@
+.jobs {
+	padding: 70px 0 80px;
+
+	@include breakpoint(md) {
+		padding: 150px 0 140px;
+	}
+
+	&-grid {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 40px 30px;
+		margin-top: 50px;
+
+		@include breakpoint(sm) {
+		}
+	}
+
+	&-card {
+		display: flex;
+		align-items: center;
+		gap: 24px;
+		box-shadow: 0px 10px 24px 0px #9196ff1f;
+		border: 1px solid #f3f4ff;
+		padding: 24px 20px;
+
+		&__icon {
+			width: 70px;
+			height: 70px;
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: scale-down;
+			}
+		}
+
+		&__info {
+			display: flex;
+			flex-direction: column;
+			gap: 8px;
+
+			h3 {
+				font-weight: 500;
+				font-size: 16px;
+				color: #1e1e1e;
+			}
+
+			p {
+				color: #9c9c9c;
+				font-size: 12px;
+			}
+		}
+	}
+}
