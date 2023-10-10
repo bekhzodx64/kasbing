@@ -4,7 +4,11 @@
 	&-main {
 		display: grid;
 		grid-template-columns: repeat(6, 1fr);
-		padding: 64px 20px 36px;
+		padding: 40px 20px 30px;
+
+		@include breakpoint(md) {
+			padding: 64px 20px 36px;
+		}
 
 		&__info {
 			display: flex;
@@ -19,22 +23,31 @@
 			}
 
 			&-date {
-				color: #fff;
+				color: $white;
 				font-size: 16px;
+				display: none;
+
+				@include breakpoint(md) {
+					display: block;
+				}
 			}
 		}
 
 		&__list {
-			display: flex;
+			display: none;
 			flex-direction: column;
 			gap: 20px;
+
+			@include breakpoint(md) {
+				display: flex;
+			}
 
 			&-item {
 				a {
 					display: inline-flex;
 					align-items: center;
 					gap: 10px;
-					color: #fff;
+					color: $white;
 					font-size: 18px;
 				}
 			}
@@ -42,16 +55,21 @@
 	}
 
 	&-base {
-		display: flex;
+		display: none;
 		align-items: center;
 		justify-content: space-between;
-		padding: 24px 20px;
+		padding: 10px 20px;
 		border-top: 1px solid #353535;
-		color: #fff;
+		color: $white;
 		font-size: 14px;
 
+		@include breakpoint(md) {
+			padding: 24px 20px;
+			display: flex;
+		}
+
 		a {
-			color: #fff;
+			color: $white;
 		}
 	}
 }
