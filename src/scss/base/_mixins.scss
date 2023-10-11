@@ -25,3 +25,55 @@
 		font-style: $style;
 	}
 }
+
+// Truncate
+@mixin truncate($numLines: 1) {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+
+	@supports (-webkit-line-clamp: $numLines) {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: initial;
+		display: -webkit-box;
+		-webkit-line-clamp: $numLines;
+		-webkit-box-orient: vertical;
+	}
+}
+
+// Absolute
+@mixin absolute(
+	$position: absolute,
+	$top: null,
+	$right: null,
+	$bottom: null,
+	$left: null,
+	$z-index: initial
+) {
+	position: $position;
+	top: $top;
+	right: $right;
+	bottom: $bottom;
+	left: $left;
+	z-index: $z-index;
+}
+
+// Placeholder
+// @mixin placeholder {
+// 	&.placeholder {
+// 		@content;
+// 	}
+// 	&:-moz-placeholder {
+// 		@content;
+// 	}
+// 	&::-moz-placeholder {
+// 		@content;
+// 	}
+// 	&:-ms-input-placeholder {
+// 		@content;
+// 	}
+// 	&::-webkit-input-placeholder {
+// 		@content;
+// 	}
+// }
