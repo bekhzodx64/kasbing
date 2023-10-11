@@ -1,5 +1,6 @@
 .jobs {
 	padding: 70px 0 80px;
+	background-color: $white;
 
 	@include breakpoint(md) {
 		padding: 150px 0 140px;
@@ -40,6 +41,7 @@
 		padding: 24px 20px;
 		max-width: 210px;
 		width: 100%;
+		background-color: $white;
 
 		@include breakpoint(sm) {
 			max-width: none;

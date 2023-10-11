@@ -1,0 +1,46 @@
+.statistics {
+	padding: 40px 0;
+	border-top: 1px solid #dbddff;
+	border-bottom: 1px solid #dbddff;
+
+	&-grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		// grid-template-columns: 1fr;
+		place-items: center;
+	}
+
+	&-card {
+		&__number {
+			font-size: 40px;
+			font-weight: 600;
+			text-align: center;
+		}
+
+		&__description {
+			font-size: 24px;
+			color: #414141;
+			text-align: center;
+			margin-top: 10px;
+		}
+
+		&__divider {
+			width: 10px;
+			height: 10px;
+			border-radius: 100%;
+			margin: 40px auto 0;
+
+			&.blue {
+				background-color: #8ac4fe;
+			}
+
+			&.red {
+				background-color: #ff6774;
+			}
+
+			&.brown {
+				background-color: #f1b865;
+			}
+		}
+	}
+}

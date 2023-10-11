@@ -1,5 +1,6 @@
 .projects {
 	padding: 70px 0 140px;
+	background-color: $white;
 
 	@include breakpoint(md) {
 		padding: 180px 0 200px;

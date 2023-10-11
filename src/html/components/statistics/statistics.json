@@ -1,0 +1,17 @@
+[
+    {
+        "color": "blue",
+        "description": "Professions",
+        "number": "2000+"
+    },
+    {
+        "color": "red",
+        "description": "Universities",
+        "number": "124+"
+    },
+    {
+        "color": "brown",
+        "description": "Сolleges and lyceums",
+        "number": "53+"
+    }
+]

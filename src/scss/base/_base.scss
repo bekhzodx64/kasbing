@@ -2,8 +2,20 @@ html {
 	scroll-behavior: smooth;
 }
 
-// body {
-// 	background-color: var(--page-bg);
-// 	color: var(--text-color);
-//     font-family: var(--font-main);
-// }
+body {
+	background-color: #f5f9fe;
+	font-family: 'graphik';
+	// font-family: var(--font-main);
+}
+
+::-webkit-scrollbar {
+	background-color: $white;
+	width: 16px;
+}
+
+::-webkit-scrollbar-thumb {
+	border: 4px solid transparent;
+	background-color: $accent-color;
+	border-radius: 100px;
+	background-clip: content-box;
+}

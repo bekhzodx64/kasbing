@@ -1,3 +1,4 @@
+// Responsive
 @mixin breakpoint($breakpoint) {
 	@if map-has-key($breakpoints, $breakpoint) {
 		$breakpoint-value: map-get($breakpoints, $breakpoint);
@@ -7,5 +8,20 @@
 		}
 	} @else {
 		@error "Invalid breakpoint: #{$breakpoint}. Please use one of the defined breakpoints.";
+	}
+}
+
+// Font face
+@mixin font-face($font-name, $path, $weight: normal, $style: normal) {
+	@font-face {
+		font-family: quote($font-name);
+		src: url('./../files' + $path + '.eot');
+		src: url('./../files' + $path + '.eot?#iefix')
+				format('embedded-opentype'),
+			url('./../files' + $path + '.woff') format('woff'),
+			url('./../files' + $path + '.ttf') format('truetype'),
+			url('./../files' + $path + '.svg##{$font-name}') format('svg');
+		font-weight: $weight;
+		font-style: $style;
 	}
 }
