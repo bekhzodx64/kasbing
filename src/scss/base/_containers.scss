@@ -15,9 +15,9 @@
 	@include breakpoint(xl) {
 		max-width: 1280px;
 	}
-	@include breakpoint(xxl) {
-		max-width: 1536px;
-	}
+	// @include breakpoint(xxl) {
+	// 	max-width: 1536px;
+	// }
 }
 
 .container-right {
