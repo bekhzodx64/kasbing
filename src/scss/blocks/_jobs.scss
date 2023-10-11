@@ -7,21 +7,48 @@
 
 	&-grid {
 		display: grid;
-		grid-template-columns: repeat(4, 1fr);
-		gap: 40px 30px;
+		grid-template-columns: 1fr;
 		margin-top: 50px;
+		gap: 20px;
+		place-items: center;
 
 		@include breakpoint(sm) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		@include breakpoint(md) {
+			grid-template-columns: repeat(3, 1fr);
+		}
+
+		@include breakpoint(lg) {
+			grid-template-columns: repeat(4, 1fr);
+		}
+
+		@include breakpoint(xl) {
+			gap: 40px 30px;
+			place-items: start;
 		}
 	}
 
 	&-card {
 		display: flex;
 		align-items: center;
-		gap: 24px;
+		flex-direction: column;
 		box-shadow: 0px 10px 24px 0px #9196ff1f;
 		border: 1px solid #f3f4ff;
+		gap: 18px;
 		padding: 24px 20px;
+		max-width: 210px;
+		width: 100%;
+
+		@include breakpoint(sm) {
+			max-width: none;
+		}
+
+		@include breakpoint(md) {
+			gap: 24px;
+			flex-direction: row;
+		}
 
 		&__icon {
 			width: 70px;
