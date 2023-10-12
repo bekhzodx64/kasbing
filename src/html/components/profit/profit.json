@@ -1,0 +1,22 @@
+[
+    {
+        "description": "35 yoʻnalishdagi 200 dan ortiq kasblar haqida toʻliq maʻlumotlar",
+        "icon": "./img/icons/jobs.svg",
+        "title": "Kasblar"
+    },
+    {
+        "description": "Xalqaro va mahalliy universitetlar roʻyxati, yoʻnalishlar, reyting, imkoniyat va talablari",
+        "icon": "./img/icons/universities.svg",
+        "title": "Universitetlar"
+    },
+    {
+        "description": "Psixologik, kasb mosligi va akademik testlar toʻplami",
+        "icon": "./img/icons/tests.svg",
+        "title": "Testlar"
+    },
+    {
+        "description": "Akademik va karyeraviy rivojlanish uchun qoʻllanma, maqola, intervyu va podkastlar",
+        "icon": "./img/icons/sources.svg",
+        "title": "Manbalar"
+    }
+]

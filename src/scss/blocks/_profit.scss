@@ -4,7 +4,13 @@
 
 	&-inner {
 		display: flex;
-		align-items: center;
+		flex-direction: column;
+		gap: 36px;
+
+		@include breakpoint(xl) {
+			flex-direction: row;
+			align-items: center;
+		}
 	}
 
 	&-info {
@@ -12,16 +18,32 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		max-width: 320px;
 		margin: 0 auto;
 
+		@include breakpoint(xl) {
+			max-width: 320px;
+		}
+
 		&__title {
-			font-size: 46px;
+			font-size: 30px;
+			text-align: center;
 			font-weight: 600;
+			text-wrap: balance;
+
+			@include breakpoint(md) {
+				font-size: 36px;
+			}
+
+			@include breakpoint(lg) {
+				font-size: 46px;
+			}
+
+			@include breakpoint(xl) {
+				text-align: left;
+			}
 		}
 
 		&__link {
-			display: inline-block;
 			padding: 20px 60px;
 			max-width: min-content;
 			color: $white;
@@ -31,23 +53,94 @@
 			background-color: $accent-color;
 			user-select: none;
 			margin-top: 36px;
+			display: none;
+
+			@include breakpoint(xl) {
+				display: inline-block;
+			}
 		}
 	}
 
 	&-grid {
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: 1fr;
 		gap: 30px;
 		width: 100%;
-		max-width: 850px;
+
+		@include breakpoint(md) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		@include breakpoint(lg) {
+			max-width: none;
+		}
+
+		@include breakpoint(xl) {
+			max-width: 750px;
+		}
 
 		&__item {
+			display: flex;
+			align-items: center;
 			background-color: $white;
-			padding: 25px;
+			padding: 20px;
+			gap: 10px;
 			border-radius: 10px;
 			box-shadow: 0px 30px 35px 0px #888eff1a;
 
-			aspect-ratio: 4/3;
+			@include breakpoint(sm) {
+				gap: 16px;
+				padding: 25px;
+			}
+
+			&-icon {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 74px;
+				height: 74px;
+				background-color: $accent-color;
+				border-radius: 100%;
+				padding: 20px;
+				flex-shrink: 0;
+
+				@include breakpoint(sm) {
+					width: 90px;
+					height: 90px;
+				}
+
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: scale-down;
+				}
+			}
+
+			&-info {
+				display: flex;
+				flex-direction: column;
+				gap: 10px;
+
+				@include breakpoint(sm) {
+					gap: 16px;
+				}
+
+				h3 {
+					font-size: 16px;
+					font-weight: 500;
+					@include truncate(1);
+
+					@include breakpoint(sm) {
+						font-size: 18px;
+					}
+				}
+
+				p {
+					font-size: 14px;
+					color: #181818;
+					@include truncate(4);
+				}
+			}
 		}
 	}
 }
