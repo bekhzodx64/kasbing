@@ -1,3 +1,5 @@
-// import mobileNav from './modules/mobile-nav.js';
-// mobileNav();
-console.log('gulp works')
+import showContent from './modules/base'
+
+document.addEventListener('DOMContentLoaded', () => {
+	showContent()
+})

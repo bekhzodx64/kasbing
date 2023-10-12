@@ -1,1 +1,1 @@
-console.log("gulp works");
+!function(){"use strict";document.addEventListener("DOMContentLoaded",(()=>{document.body.style.opacity=1}))}();
