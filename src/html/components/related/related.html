@@ -1,9 +1,9 @@
 <section class="related">
 	<div class="container">
-		<h2 class="">@@title</h2>
+		<h2 class="section-title">@@title</h2>
 
-		<div>
-			@@include('related-card.html')
+		<div class="related-grid">
+			@@loop('related-card.html', './components/related/related.json')
 		</div>
 	</div>
 </section>

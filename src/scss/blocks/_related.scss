@@ -1,6 +1,13 @@
 .related {
 	padding: 80px 0 200px;
 
+	&-grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 30px;
+		margin-top: 80px;
+	}
+
 	&-card {
 		display: flex;
 		justify-content: space-between;
