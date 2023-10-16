@@ -1,14 +1,14 @@
 .pages {
 	@include absolute(fixed, 50%, auto, auto, 0, 10);
 	transform: translateY(-50%);
+	transition: all 0.5s linear;
+	display: none;
 
 	&-list {
 		background-color: $white;
 		border-radius: 10px;
 		padding: 20px 40px;
-		margin-left: 20px;
 		box-shadow: 0px 10px 24px 0px #9196ff1f;
-		position: relative;
 		max-width: 250px;
 		width: 100%;
 
@@ -27,7 +27,7 @@
 		}
 	}
 
-	&-icon {
+	.icon {
 		@include absolute(absolute, 50%, 0, auto, auto);
 		background-color: $white;
 		border-radius: 100%;
@@ -42,6 +42,16 @@
 
 		img {
 			transform: rotate(-90deg);
+			pointer-events: none;
+		}
+
+		&:hover {
+			background-color: #000;
+
+			.pages-list {
+				background-color: #000;
+				// transform: translateX(100px) translateY(50%);
+			}
 		}
 	}
 }

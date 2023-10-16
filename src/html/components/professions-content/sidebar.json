@@ -1,0 +1,27 @@
+[
+    {
+        "icon": "./img/icons/gem.svg",
+        "link": "#",
+        "title": "Umumiy ma'lumot"
+    },
+    {
+        "icon": "./img/icons/document.svg",
+        "link": "#",
+        "title": "Talab, koʻnikma va majburiyatlar"
+    },
+    {
+        "icon": "./img/icons/benefits.svg",
+        "link": "#",
+        "title": "Ijobiy va salbiy tomonlari"
+    },
+    {
+        "icon": "./img/icons/case.svg",
+        "link": "#",
+        "title": "Qayerda ishlash mumkin?"
+    },
+    {
+        "icon": "./img/icons/link.svg",
+        "link": "#",
+        "title": "Foydali havolalar"
+    }
+]

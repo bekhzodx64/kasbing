@@ -12,10 +12,14 @@
 	<title>Kasbing - Professions page</title>
 </head>
 
-<body style="opacity: 0; transition: all .5s linear" class="sticky-footer">
+<body style="opacity: 0; transition: all .5s linear">
 	@@include('components/header/header.html')
 
+	@@include('components/pages/pages.html')
+
 	<main>
+		@@include('components/professions-banner/professions-banner.html')
+		@@include('components/professions-content/professions-content.html')
 		@@include('components/related/related.html', {"title": "Tegishli kasblar"})
 	</main>
 
