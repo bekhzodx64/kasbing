@@ -1,0 +1,24 @@
+.tips {
+	background-color: $white;
+
+	&-inner {
+		padding: 100px 0 50px;
+		display: flex;
+		flex-direction: column;
+		gap: 70px;
+	}
+
+	&-title {
+		font-weight: 600;
+		font-size: 48px;
+		text-wrap: balance;
+		max-width: 760px;
+		@include truncate(2);
+	}
+
+	&-grid {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 20px;
+	}
+}

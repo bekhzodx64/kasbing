@@ -1,0 +1,41 @@
+.blog-categories {
+	max-width: 280px;
+	width: 100%;
+
+	&__block {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+		padding: 30px 0;
+
+		h2 {
+			color: #1e1e1e;
+			font-weight: 600;
+			font-size: 24px;
+		}
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+
+		li {
+			a {
+				color: #6f6f6f;
+				font-weight: 500;
+				font-size: 18px;
+			}
+		}
+	}
+
+	&__link {
+		text-align: center;
+		border: 1px solid $accent-color;
+		color: $accent-color;
+		padding: 20px 0;
+		border-radius: 10px;
+		font-weight: 600;
+		font-size: 14px;
+	}
+}

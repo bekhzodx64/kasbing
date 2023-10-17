@@ -16,7 +16,36 @@
 	@@include('components/header/header.html')
 
 	<main>
-		blog page
+		<div class="tips">
+			<div class="container">
+				<div class="tips-inner">
+					<h2 class="tips-title">Expert tips and advice for all stages of your career</h2>
+
+					<div class="tips-grid">
+						<div class="blog-card large">1</div>
+						@@loop('components/blog-card/blog-card.html', 'data/blog-tips.json')
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="blogs">
+			<div class="container">
+				<div class="blogs-inner">
+					<div class="blog-categories">
+						@@include('components/blog-category/blog-category.html', {"title": "Jobs"})
+						@@include('components/blog-category/blog-category.html', {"title": "Workplace"})
+						@@include('components/blog-category/blog-category.html', {"title": "Interview"})
+					</div>
+
+					<div class="blogs-grid">
+						@@loop('components/blog-card/blog-card.html', 'data/blog-tips.json')
+						@@loop('components/blog-card/blog-card.html', 'data/blog-tips.json')
+					</div>
+				</div>
+
+			</div>
+		</div>
 	</main>
 
 	@@include('components/footer/footer.html')
