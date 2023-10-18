@@ -1,0 +1,53 @@
+.pagination {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	&-list {
+		display: flex;
+		align-items: center;
+		gap: 14px;
+	}
+
+	&-link {
+		width: 46px;
+		height: 46px;
+		border-radius: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: $white;
+		border: 1px solid #edeeff;
+		font-size: 16px;
+		font-weight: 600;
+		color: #50535e;
+		overflow: hidden;
+		transition: all 0.3s linear;
+
+		&:hover {
+			border-color: $accent-color;
+			color: $accent-color;
+		}
+
+		&.current {
+			background-color: $accent-color;
+			border-color: $accent-color;
+			color: $white;
+		}
+
+		&.reverse {
+			transform: rotate(180deg);
+		}
+
+		&.disabled {
+			opacity: 0.4;
+			border-color: $accent-color;
+			background-color: $accent-color;
+		}
+
+		&:has(img) {
+			margin-left: 16px;
+			margin-right: 16px;
+		}
+	}
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="200+ kasblar, universitetlar ro‘yxati, psixologik test va bepul ta‘lim manbalari. Tibbiyot, moliya, marketing, IT va boshqa yo‘nalishlar." />
+
+	<link rel="stylesheet" href="./css/main.css" />
+
+	<title>Kasbing - All Articles</title>
+</head>
+
+<body style="opacity: 0; transition: all .5s linear">
+	@@include('components/header/header.html')
+
+	<main>
+
+		<!-- <div class="breadcrumbs">
+			<div class="container">
+				<ul class="breadcrumbs-inner">
+					<li>
+						<a href="#" draggable="false">Home</a>
+					</li>
+					<li>
+						<a href="#">University</a>
+					</li>
+					<li>
+						<a href="#">All articles</a>
+					</li>
+				</ul>
+			</div>
+		</div> -->
+
+		<div class="articles">
+			<div class="container">
+				<div class="articles-header">
+					<h1>Workplace</h1>
+					<div class="articles-header__tags">
+						<a href="#" class="articles-header__tag">
+							<div class="articles-header__tag-img" style="background-color: #FFBB56;">
+								<img src="./img/article-tags/case.png" alt="">
+							</div>
+							<span>Job</span>
+						</a>
+						<a href="#" class="articles-header__tag">
+							<div class="articles-header__tag-img" style="background-color: #FFBB56;">
+								<img src="./img/article-tags/case.png" alt="">
+							</div>
+							<span>Interview</span>
+						</a>
+						<a href="#" class="articles-header__tag active">
+							<div class="articles-header__tag-img" style="background-color: #FFBB56;">
+								<img src="./img/article-tags/case.png" alt="">
+							</div>
+							<span>Workplace</span>
+						</a>
+						<a href="#" class="articles-header__tag">
+							<div class="articles-header__tag-img" style="background-color: #FFBB56;">
+								<img src="./img/article-tags/case.png" alt="">
+							</div>
+							<span>Kasbingizni qanday tanlash kerak</span>
+						</a>
+					</div>
+				</div>
+
+				<div class="articles-grid">
+					@@loop('components/article-card/article-card.html', 'data/articles.json')
+				</div>
+
+				@@include('components/pagination/pagination.html')
+			</div>
+		</div>
+	</main>
+
+	@@include('components/footer/footer.html')
+
+	<script src="./js/index.bundle.js"></script>
+</body>
+
+</html>
