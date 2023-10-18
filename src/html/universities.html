@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="200+ kasblar, universitetlar ro‘yxati, psixologik test va bepul ta‘lim manbalari. Tibbiyot, moliya, marketing, IT va boshqa yo‘nalishlar." />
+
+	<link rel="stylesheet" href="./css/main.css" />
+
+	<title>Kasbing - Universities page</title>
+</head>
+
+<body style="opacity: 0; transition: all .5s linear">
+	@@include('components/header/header.html')
+
+	<main>
+
+		<div class="universities">
+			<div class="container">
+				<h2 class="universities-title">Milliy va Xalqaro universitetlar haqida barchasi!</h2>
+
+				<div class="universities-tabs">
+					<a href="#" class="active">Milliy</a>
+					<a href="#" class="">Xalqaro</a>
+				</div>
+
+				<div class="universities-table">
+					<div class="heading">
+						<div>Universitet nomi</div>
+						<div>Shahar</div>
+						<div>Kirish bali</div>
+						<div>To‘lov miqdori (UZS)</div>
+					</div>
+
+					<div class="data">
+						<div class="data-row">
+							<div class="university">1</div>
+							<div class="country">
+								<span>Toshkent</span>
+							</div>
+							<div class="score">89.7</div>
+							<div class="price">
+								<span>8.3</span> mln - <span>14.2</span> mln
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		@@include('components/pagination/pagination.html')
+		@@include('components/related/related.html', {"title": "Top kasblar"})
+
+	</main>
+
+	@@include('components/footer/footer.html')
+
+	<script src="./js/index.bundle.js"></script>
+</body>
+
+</html>
