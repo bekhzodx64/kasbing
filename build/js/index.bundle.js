@@ -1,1 +1,1 @@
-!function(){"use strict";document.addEventListener("DOMContentLoaded",(()=>{document.body.style.opacity=1}))}();
+!function(){"use strict";document.addEventListener("DOMContentLoaded",(()=>{document.body.style.opacity=1,function(){const s=document.querySelectorAll(".faq-card");s.forEach((t=>{t.addEventListener("click",(()=>{t.classList.contains("show")?t.classList.remove("show"):(s.forEach((s=>{s.classList.remove("show")})),t.classList.add("show"))}))}))}()}))}();
