@@ -1,57 +1,46 @@
 .pages {
-	@include absolute(fixed, 50%, auto, auto, 0, 10);
-	transform: translateY(-50%);
-	transition: all 0.5s linear;
-	display: none;
+	padding: 30px;
+	background-color: $white;
+	max-width: 768px;
+	margin: 50px auto;
+	border-radius: 20px;
+	box-shadow: 0px 10px 24px 0px #9197ff49;
 
-	&-list {
-		background-color: $white;
-		border-radius: 10px;
-		padding: 20px 40px;
-		box-shadow: 0px 10px 24px 0px #9196ff1f;
-		max-width: 250px;
-		width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
 
-		li {
-			margin-top: 10px;
-
-			&:last-child {
-				margin-top: 0;
-			}
-
-			a {
-				display: block;
-				color: $black;
-				padding: 10px 0;
-			}
-		}
-	}
-
-	.icon {
-		@include absolute(absolute, 50%, 0, auto, auto);
-		background-color: $white;
-		border-radius: 100%;
-		width: 50px;
-		height: 50px;
-		display: flex;
-		align-items: center;
-		justify-content: end;
-		padding: 0 10px 0 0;
-		transform: translate(50%, -50%);
-		cursor: pointer;
-
-		img {
-			transform: rotate(-90deg);
-			pointer-events: none;
-		}
+	a {
+		display: block;
+		padding: 15px 30px;
+		border: 2px dashed #b7b7b7;
+		color: $black;
+		font-size: 20px;
+		transition: all 0.3s linear;
 
 		&:hover {
-			background-color: #000;
-
-			.pages-list {
-				background-color: #000;
-				// transform: translateX(100px) translateY(50%);
-			}
+			background-color: #e9f9ff;
+			border-color: transparent;
 		}
+	}
+}
+
+.widget {
+	@include absolute(fixed, 50%, auto, auto, 0, 10);
+	background-color: #eaeaea;
+	transform: translate(-50%, -50%);
+	border-radius: 100%;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: end;
+	padding: 0 10px 0 0;
+	box-shadow: 0px 10px 24px 0px #9197ff49;
+	cursor: pointer;
+
+	img {
+		transform: rotate(-90deg);
+		pointer-events: none;
 	}
 }

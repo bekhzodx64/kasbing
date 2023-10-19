@@ -9,20 +9,38 @@
 
 	<link rel="stylesheet" href="./css/main.css" />
 
-	<title>Kasbing - Home page</title>
+	<title>Kasbing - Pages</title>
 </head>
 
 <body style="opacity: 0; transition: all .5s linear">
 	@@include('components/header/header.html')
 
-	@@include('components/pages/widget.html')
-
 	<main>
-		@@include('components/introduction/introduction.html')
-		@@include('components/profit/profit.html')
-		@@include('components/jobs-categories/jobs-categories.html')
-		@@include('components/statistics/statistics.html')
-		@@include('components/other-projects/other-projects.html')
+		<div class="container">
+			<ul class="pages">
+				<li>
+					<a href="index.html">Home page</a>
+				</li>
+				<li>
+					<a href="blog.html">Blog page</a>
+				</li>
+				<li>
+					<a href="faq.html">FAQ page</a>
+				</li>
+				<li>
+					<a href="professions.html">Professions page</a>
+				</li>
+				<li>
+					<a href="search-result.html">Search result page</a>
+				</li>
+				<li>
+					<a href="universities.html">Universities page</a>
+				</li>
+				<li>
+					<a href="university-article.html">University article page</a>
+				</li>
+			</ul>
+		</div>
 	</main>
 
 	@@include('components/footer/footer.html')
