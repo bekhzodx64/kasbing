@@ -1,0 +1,90 @@
+[
+    {
+        "country": "Tashkent",
+        "faculties": 8,
+        "logo": "./img/universities-logo/tatu.svg",
+        "price": {
+            "from": 8.3,
+            "to": 14.2
+        },
+        "score": 89.7,
+        "title": "Toshkent axborot texnologiyalari universiteti"
+    },
+    {
+        "country": "Tashkent",
+        "faculties": 9,
+        "logo": "./img/universities-logo/sud.png",
+        "price": {
+            "from": 9,
+            "to": 22.5
+        },
+        "score": 99.2,
+        "title": "Toshkent davlat iqtisodiyot universiteti"
+    },
+    {
+        "country": "Tashkent",
+        "faculties": 12,
+        "logo": "./img/universities-logo/tgeu.svg",
+        "price": {
+            "from": 10.2,
+            "to": 25.3
+        },
+        "score": 76.3,
+        "title": "Toshkent davlat texnika universiteti"
+    },
+    {
+        "country": "Tashkent",
+        "faculties": 4,
+        "logo": "./img/universities-logo/isft.svg",
+        "price": {
+            "from": 7.8,
+            "to": 13.1
+        },
+        "score": 87.7,
+        "title": "International School of Finance Technology and journalistic Science"
+    },
+    {
+        "country": "Tashkent",
+        "faculties": 8,
+        "logo": "./img/universities-logo/tatu.svg",
+        "price": {
+            "from": 8.3,
+            "to": 14.2
+        },
+        "score": 89.7,
+        "title": "Toshkent axborot texnologiyalari universiteti"
+    },
+    {
+        "country": "Tashkent",
+        "faculties": 9,
+        "logo": "./img/universities-logo/sud.png",
+        "price": {
+            "from": 9,
+            "to": 22.5
+        },
+        "score": 99.2,
+        "title": "Toshkent davlat iqtisodiyot universiteti"
+    },
+    {
+        "country": "Tashkent",
+        "faculties": 12,
+        "logo": "./img/universities-logo/tgeu.svg",
+        "price": {
+            "from": 10.2,
+            "to": 25.3
+        },
+        "score": 76.3,
+        "title": "Toshkent davlat texnika universiteti"
+    },
+    {
+        "country": "Tashkent",
+        "faculties": 4,
+        "logo": "./img/universities-logo/isft.svg",
+        "price": {
+            "from": 7.8,
+            "to": 13.1
+        },
+        "score": 87.7,
+        "title": "International School of Finance Technology and journalistic Science"
+    }
+]
