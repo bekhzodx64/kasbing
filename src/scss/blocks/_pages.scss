@@ -10,6 +10,18 @@
 	flex-direction: column;
 	gap: 20px;
 
+	li {
+		&.disabled {
+			background-color: #e7e7e7;
+			cursor: not-allowed;
+
+			a {
+				border-color: transparent;
+				pointer-events: none;
+			}
+		}
+	}
+
 	a {
 		display: block;
 		padding: 15px 30px;
