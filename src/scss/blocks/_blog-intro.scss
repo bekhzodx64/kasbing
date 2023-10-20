@@ -1,0 +1,64 @@
+.blog-intro {
+	border-bottom: 1px solid #dbddff;
+	background: #f9f9ff;
+	box-shadow: 0px 2px 24px 0px rgba(145, 150, 255, 0.05);
+
+	&__inner {
+		padding: 165px 0 140px;
+		position: relative;
+	}
+
+	&__title {
+		color: #000;
+		font-size: 64px;
+		font-weight: 700;
+	}
+
+	&__form {
+		display: flex;
+		margin-top: 50px;
+		border-radius: 10px;
+		border: 1px solid #ebecff;
+		background: #fff;
+		box-shadow: 0px 10px 24px 0px rgba(145, 150, 255, 0.12);
+		max-width: 960px;
+		padding: 8px;
+		gap: 42px;
+	}
+
+	&__input {
+		flex: 1;
+		position: relative;
+
+		input {
+			width: 100%;
+			outline: none;
+			border: none;
+			color: #696969;
+			font-size: 16px;
+			font-weight: 300;
+			padding: 20px 20px 20px 72px;
+		}
+
+		img {
+			@include absolute(absolute, 50%, auto, auto, 24px);
+			transform: translateY(-50%);
+		}
+	}
+
+	&__button {
+		border-radius: 10px;
+		background: $accent-color;
+		border: none;
+		outline: none;
+		color: $white;
+		font-size: 18px;
+		font-weight: 600;
+		padding: 20px 60px;
+		cursor: pointer;
+	}
+
+	&__rocket {
+		@include absolute(absolute, auto, -200px, -50px, auto);
+	}
+}

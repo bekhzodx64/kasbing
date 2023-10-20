@@ -1,0 +1,52 @@
+.select {
+	position: relative;
+
+	&.is-active {
+		.select-body {
+			display: block;
+		}
+	}
+
+	&-header {
+		border: 1px solid #ccc;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&-current {
+		font-size: 18px;
+		padding: 8px;
+	}
+
+	&-icon {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		flex-shrink: 0;
+		width: 40px;
+		height: 40px;
+	}
+
+	&-body {
+		border: 1px solid #ccc;
+		border-top: 0;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 100%;
+		background-color: #fff;
+		z-index: 10;
+		display: none;
+	}
+
+	&-item {
+		padding: 8px;
+		font-size: 16px;
+
+		&:hover {
+			background-color: #f2f2f2;
+		}
+	}
+}
