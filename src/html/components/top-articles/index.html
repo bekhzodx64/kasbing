@@ -1,0 +1,14 @@
+<div class="top-articles">
+	<div class="container">
+		<div class="top-articles__inner">
+			<div class="top-articles__info">
+				<h2 class="top-articles__title">Top maqolalar </h2>
+				<p class="top-articles__description">Bu hafta davomida eng ko‘p o‘qilgan maqolalar ketma-ketligi.</p>
+			</div>
+
+			<div class="top-articles__grid">
+				@@loop('../blog-card/blog-card.html', 'data/top-articles.json')
+			</div>
+		</div>
+	</div>
+</div>

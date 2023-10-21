@@ -1,0 +1,36 @@
+.top-articles {
+	padding: 50px 0 150px;
+
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		gap: 50px;
+	}
+
+	&__info {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	&__title {
+		color: #121212;
+		font-size: 48px;
+		font-weight: 700;
+		letter-spacing: 3.36px;
+	}
+
+	&__description {
+		color: #717171;
+		font-size: 16px;
+		font-style: italic;
+		font-weight: 400;
+		letter-spacing: 0.64px;
+	}
+
+	&__grid {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 30px;
+	}
+}
