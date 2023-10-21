@@ -18,6 +18,33 @@
 	@@include('components/pages/widget.html')
 
 	<main>
+		<div class="results-intro">
+			<div class="container">
+				<div class="results-intro__inner">
+					<h1 class="results-intro__title">Kasblar ro‘yxati</h1>
+
+					<form class="results-intro__form">
+						<div class="results-intro__input">
+							<img src="./img/icons/search.svg" alt="search" draggable="false" class="no-select">
+							<input type="text" placeholder="Search">
+						</div>
+
+						<!-- <div class="results-intro__select">
+						</div> -->
+
+						<button class="results-intro__button">
+							Izlash
+						</button>
+
+					</form>
+
+					<div class="results-intro__tags">
+						@@loop("./components/introduction/tag.html", "./data/result-tags.json")
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<div class="results">
 			<div class="container">
 				<div class="results-grid">

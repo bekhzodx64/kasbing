@@ -118,6 +118,11 @@
 				color: $white;
 				background-color: $accent-color;
 			}
+
+			&.selected-black {
+				color: $white;
+				background-color: #202020;
+			}
 		}
 	}
 }
