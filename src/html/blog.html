@@ -53,6 +53,36 @@
 						<div class="blog-card large">1</div>
 						@@loop('components/blog-card/blog-card.html', 'data/blog-tips.json')
 					</div>
+
+					<div class="tips-categories">
+						<div class="articles-header__tags">
+							<a href="#" class="articles-header__tag">
+								<div class="articles-header__tag-img" style="background-color: #FFBB56;">
+									<img src="./img/article-tags/case.png" alt="">
+								</div>
+								<span>Job</span>
+							</a>
+							<a href="#" class="articles-header__tag">
+								<div class="articles-header__tag-img" style="background-color: #FFBB56;">
+									<img src="./img/article-tags/case.png" alt="">
+								</div>
+								<span>Interview</span>
+							</a>
+							<a href="#" class="articles-header__tag active">
+								<div class="articles-header__tag-img" style="background-color: #FFBB56;">
+									<img src="./img/article-tags/case.png" alt="">
+								</div>
+								<span>Workplace</span>
+							</a>
+							<a href="#" class="articles-header__tag">
+								<div class="articles-header__tag-img" style="background-color: #FFBB56;">
+									<img src="./img/article-tags/case.png" alt="">
+								</div>
+								<span>Kasbingizni qanday tanlash kerak</span>
+							</a>
+						</div>
+
+					</div>
 				</div>
 			</div>
 		</div>
@@ -71,7 +101,7 @@
 						@@loop('components/blog-card/blog-card.html', 'data/blog-tips.json')
 					</div>
 
-					@@include('components/pagination/pagination.html')
+					<!-- @@include('components/pagination/pagination.html') -->
 				</div>
 
 			</div>

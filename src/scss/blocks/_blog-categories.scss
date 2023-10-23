@@ -3,7 +3,7 @@
 	width: 100%;
 	display: none;
 
-	@include breakpoint(md) {
+	@include breakpoint(lg) {
 		display: block;
 	}
 
