@@ -4,40 +4,78 @@
 	box-shadow: 0px 2px 24px 0px rgba(145, 150, 255, 0.05);
 
 	&__inner {
-		padding: 165px 0 140px;
+		padding: 60px 0;
 		position: relative;
+
+		@include breakpoint(md) {
+			padding: 90px 0 150px;
+		}
+	}
+
+	&__breadcrumbs {
+		display: none;
+
+		@include breakpoint(md) {
+			display: block;
+		}
 	}
 
 	&__title {
 		color: #000;
-		font-size: 64px;
+		font-size: 36px;
 		font-weight: 700;
+
+		@include breakpoint(md) {
+			font-size: 64px;
+			margin-top: 50px;
+		}
 	}
 
 	&__form {
 		display: flex;
-		margin-top: 50px;
+		flex-direction: column;
+		margin-top: 34px;
 		border-radius: 10px;
 		border: 1px solid #ebecff;
 		background: #fff;
 		box-shadow: 0px 10px 24px 0px rgba(145, 150, 255, 0.12);
 		max-width: 960px;
-		padding: 8px;
-		gap: 42px;
+		padding: 18px 14px;
+		gap: 18px;
+
+		@include breakpoint(md) {
+			flex-direction: row;
+			padding: 8px;
+			gap: 42px;
+			margin-top: 50px;
+		}
 	}
 
 	&__input {
 		flex: 1;
 		position: relative;
+		border-bottom: 1px solid #c5c7ff;
+
+		@include breakpoint(md) {
+			border-bottom: none;
+		}
 
 		input {
 			width: 100%;
 			outline: none;
 			border: none;
-			color: #696969;
-			font-size: 16px;
+			color: #4f4f4f;
+			font-size: 14px;
 			font-weight: 300;
 			padding: 20px 20px 20px 72px;
+
+			&::placeholder {
+				color: #696969;
+			}
+
+			@include breakpoint(md) {
+				font-size: 16px;
+			}
 		}
 
 		img {
@@ -52,13 +90,22 @@
 		border: none;
 		outline: none;
 		color: $white;
-		font-size: 18px;
+		font-size: 14px;
 		font-weight: 600;
 		padding: 20px 60px;
 		cursor: pointer;
+
+		@include breakpoint(md) {
+			font-size: 18px;
+		}
 	}
 
 	&__rocket {
+		display: none;
 		@include absolute(absolute, auto, -200px, -50px, auto);
+
+		@include breakpoint(xl) {
+			display: block;
+		}
 	}
 }

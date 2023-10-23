@@ -22,7 +22,9 @@
 		<div class="blog-intro">
 			<div class="container">
 				<div class="blog-intro__inner">
-					@@include('components/breadcrumbs/index.html')
+					<div class="blog-intro__breadcrumbs">
+						@@include('components/breadcrumbs/index.html')
+					</div>
 
 					<h1 class="blog-intro__title">Career Advice</h1>
 
@@ -68,6 +70,8 @@
 						@@loop('components/blog-card/blog-card.html', 'data/blog-tips.json')
 						@@loop('components/blog-card/blog-card.html', 'data/blog-tips.json')
 					</div>
+
+					@@include('components/pagination/pagination.html')
 				</div>
 
 			</div>

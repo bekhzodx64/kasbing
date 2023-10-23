@@ -1,6 +1,11 @@
 .blog-categories {
 	max-width: 280px;
 	width: 100%;
+	display: none;
+
+	@include breakpoint(md) {
+		display: block;
+	}
 
 	&__block {
 		display: flex;

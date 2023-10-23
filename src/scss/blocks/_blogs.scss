@@ -3,13 +3,16 @@
 
 	&-inner {
 		display: flex;
-		align-items: start;
+		flex-direction: column;
+		// align-items: start;
 		gap: 90px;
 	}
 
 	&-grid {
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		gap: 50px 14px;
+		// grid-template-columns: repeat(3, 1fr);
+		// gap: 50px 14px;
+		grid-template-columns: repeat(1, 1fr);
+		gap: 24px;
 	}
 }
