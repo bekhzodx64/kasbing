@@ -1,31 +1,48 @@
 .tips {
 	&-inner {
-		// padding: 100px 0 50px;
 		padding: 44px 0 36px;
 		display: flex;
 		flex-direction: column;
-		// gap: 70px;
 		gap: 50px;
+
+		@include breakpoint(md) {
+			padding: 100px 0 50px;
+			gap: 70px;
+		}
 	}
 
 	&-title {
 		font-weight: 600;
-		// font-size: 48px;
 		font-size: 24px;
 		text-wrap: balance;
 		max-width: 760px;
 		@include truncate(2);
+
+		@include breakpoint(md) {
+			font-size: 48px;
+		}
 	}
 
 	&-grid {
-		display: grid;
-		grid-template-columns: repeat(4, 1fr);
 		gap: 20px;
 		display: none;
+
+		@include breakpoint(md) {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+		}
+
+		@include breakpoint(lg) {
+			grid-template-columns: repeat(4, 1fr);
+		}
 	}
 
 	&-categories {
 		display: flex;
 		overflow-x: auto;
+
+		@include breakpoint(md) {
+			display: none;
+		}
 	}
 }
