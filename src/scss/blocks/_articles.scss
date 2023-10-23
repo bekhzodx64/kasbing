@@ -1,11 +1,12 @@
 .articles {
 	background-color: $white;
-	padding: 100px 0 180px;
+	padding: 80px 0 180px;
 
 	&-header {
 		display: flex;
 		align-items: center;
 		gap: 70px;
+		margin-top: 56px;
 
 		h1 {
 			font-size: 48px;
