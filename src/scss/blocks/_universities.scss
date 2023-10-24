@@ -146,4 +146,21 @@
 			}
 		}
 	}
+
+	&-pagination {
+		padding: 70px 0;
+	}
+
+	&-professions__table {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 32px;
+	}
+
+	&-faculty__table {
+		padding: 54px 0;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 24px 30px;
+	}
 }
