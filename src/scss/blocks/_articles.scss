@@ -1,22 +1,35 @@
 .articles {
 	background-color: $white;
-	padding: 80px 0 180px;
+
+	padding: 20px 0;
+
+	@include breakpoint(md) {
+		padding: 80px 0 180px;
+	}
 
 	&-header {
 		display: flex;
 		align-items: center;
-		gap: 70px;
+		flex-direction: column;
 		margin-top: 56px;
+		gap: 30px;
+
+		@include breakpoint(xl) {
+			flex-direction: row;
+			gap: 70px;
+		}
 
 		h1 {
 			font-size: 48px;
 			font-weight: 700;
+			margin-right: auto;
 		}
 
 		&__tags {
 			display: flex;
 			align-items: center;
 			gap: 10px;
+			width: 100%;
 		}
 
 		&__tag {
@@ -33,7 +46,6 @@
 			font-weight: 600;
 			max-width: max-content;
 			white-space: nowrap;
-			text-overflow: ellipsis;
 
 			&.active {
 				background-color: #b2d1ff;
@@ -56,9 +68,23 @@
 
 	&-grid {
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		gap: 32px;
-		margin-top: 50px;
-		margin-bottom: 100px;
+		grid-template-columns: repeat(1, 1fr);
+		margin: 20px -20px;
+		gap: 24px;
+
+		@include breakpoint(sm) {
+			margin: 20px 0;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 32px;
+		}
+
+		@include breakpoint(md) {
+			margin-top: 50px;
+			margin-bottom: 100px;
+		}
+
+		@include breakpoint(lg) {
+			grid-template-columns: repeat(3, 1fr);
+		}
 	}
 }

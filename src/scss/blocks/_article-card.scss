@@ -1,8 +1,16 @@
 .article-card {
+	// margin: 0 auto;
+	max-width: 640px;
+
+	@include breakpoint(md) {
+		max-width: none;
+		margin: 0;
+	}
+
 	&__poster {
 		background-color: #d9efff;
 		padding: 10px;
-		border-radius: 24px 24px 0 0;
+		border-radius: 16px 16px 0 0;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -13,18 +21,26 @@
 			height: 100%;
 			object-fit: scale-down;
 		}
+
+		@include breakpoint(md) {
+			border-radius: 24px 24px 0 0;
+		}
 	}
 
 	&__stats {
-		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		background-color: rgba(0, 0, 0, 0.2);
 		color: $white;
 		padding: 10px 24px;
+		display: none;
 
 		p {
 			@include truncate(1);
+		}
+
+		@include breakpoint(lg) {
+			display: flex;
 		}
 	}
 
@@ -50,7 +66,8 @@
 		h3 {
 			font-weight: 700;
 			font-size: 18px;
-			@include truncate(1);
+			text-wrap: balance;
+			@include truncate(2);
 		}
 
 		p {
@@ -58,6 +75,22 @@
 			color: #777777;
 			font-style: italic;
 			@include truncate(5);
+			display: none !important;
+
+			@include breakpoint(md) {
+				display: block !important;
+			}
+		}
+	}
+
+	&__counts {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		font-size: 14px;
+
+		@include breakpoint(md) {
+			font-size: 16px;
 		}
 	}
 
@@ -67,5 +100,29 @@
 		gap: 10px;
 		font-style: italic;
 		color: #616385;
+	}
+
+	&__comments {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		font-style: italic;
+		color: #616385;
+
+		@include breakpoint(lg) {
+			display: none;
+		}
+	}
+
+	&__views {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		font-style: italic;
+		color: #616385;
+
+		@include breakpoint(lg) {
+			display: none;
+		}
 	}
 }

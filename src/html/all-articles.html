@@ -18,29 +18,13 @@
 	@@include('components/pages/widget.html')
 
 	<main>
-
-		<!-- <div class="breadcrumbs">
-			<div class="container">
-				<ul class="breadcrumbs-inner">
-					<li>
-						<a href="#" draggable="false">Home</a>
-					</li>
-					<li>
-						<a href="#">University</a>
-					</li>
-					<li>
-						<a href="#">All articles</a>
-					</li>
-				</ul>
-			</div>
-		</div> -->
-
 		<div class="articles">
 			<div class="container">
 				@@include('components/breadcrumbs/index.html')
 
 				<div class="articles-header">
 					<h1>Workplace</h1>
+
 					<div class="articles-header__tags">
 						<a href="#" class="articles-header__tag">
 							<div class="articles-header__tag-img" style="background-color: #FFBB56;">
@@ -73,7 +57,7 @@
 					@@loop('components/article-card/article-card.html', 'data/articles.json')
 				</div>
 
-				@@include('components/pagination/pagination.html')
+				<!-- @@include('components/pagination/pagination.html') -->
 			</div>
 		</div>
 	</main>
