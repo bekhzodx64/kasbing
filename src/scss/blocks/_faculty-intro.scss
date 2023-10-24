@@ -1,0 +1,29 @@
+.faculty-intro {
+	padding: 70px 0 30px;
+	background-color: #f9f9ff;
+
+	&__header {
+		display: flex;
+		align-items: center;
+		gap: 30px;
+	}
+
+	&__logo {
+		width: 86px;
+		height: 86px;
+		border-radius: 100%;
+		background-color: red;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&__title {
+		color: #000;
+		font-size: 22px;
+		font-weight: 600;
+	}
+}
