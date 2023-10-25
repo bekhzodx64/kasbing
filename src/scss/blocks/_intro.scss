@@ -3,14 +3,25 @@
 	overflow: hidden;
 
 	&-inner {
-		padding-top: 150px;
-		padding-bottom: 130px;
+		padding-top: 90px;
+		padding-bottom: 70px;
 		position: relative;
+
+		@include breakpoint(md) {
+			padding-top: 150px;
+			padding-bottom: 130px;
+		}
 	}
 
 	&-image {
 		@include absolute(absolute, auto, -300px, 0, auto, 0);
 		pointer-events: none;
+
+		display: none;
+
+		@include breakpoint(xl) {
+			display: block;
+		}
 	}
 
 	&-actions {
@@ -21,33 +32,65 @@
 	&-title {
 		position: relative;
 		font-weight: 700;
-		font-size: 72px;
+		font-size: 36px;
 		text-wrap: balance;
 		line-height: 1;
+		text-align: center;
 
 		img {
 			width: 51px;
 			height: 37px;
 			pointer-events: none;
 			@include absolute(absolute, -25px, auto, auto, -35px);
+			display: none;
+
+			@include breakpoint(md) {
+				display: block;
+			}
+		}
+
+		@include breakpoint(md) {
+			font-size: 54px;
+			text-align: left;
+		}
+
+		@include breakpoint(lg) {
+			font-size: 72px;
 		}
 	}
 
 	&-subtitle {
 		margin-top: 30px;
 		color: #9e9e9e;
-		font-size: 20px;
+		text-align: center;
+
+		font-size: 16px;
+
+		@include breakpoint(md) {
+			text-align: left;
+			font-size: 18px;
+		}
+
+		@include breakpoint(lg) {
+			font-size: 20px;
+		}
 	}
 
 	&-form {
 		display: flex;
-		align-items: center;
-		justify-content: space-between;
+		flex-direction: column;
 		margin-top: 54px;
 		background-color: $white;
 		border-radius: 10px;
 		box-shadow: 0px 10px 24px 0px #9196ff1f;
-		padding: 10px 8px;
+		padding: 18px 14px;
+
+		@include breakpoint(md) {
+			padding: 10px 8px;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+		}
 
 		&__input {
 			flex: 1;
@@ -67,10 +110,15 @@
 				font-weight: 300;
 				font-size: 16px;
 				color: #000;
-				border-right: 1px solid #c5c7ff;
+				border-bottom: 1px solid #c5c7ff;
 
 				&::placeholder {
 					color: #696969;
+				}
+
+				@include breakpoint(md) {
+					border-right: 1px solid #c5c7ff;
+					border-bottom: none;
 				}
 			}
 		}
