@@ -1,0 +1,16 @@
+.faculty-body {
+	padding: 94px 0 130px;
+
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		gap: 54px;
+	}
+
+	&__title {
+		color: $black;
+		text-align: center;
+		font-size: 48px;
+		font-weight: 600;
+	}
+}
