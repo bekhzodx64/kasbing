@@ -1,18 +1,9 @@
 <!DOCTYPE html>
 <html lang="uz">
 
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="description" content="200+ kasblar, universitetlar ro‘yxati, psixologik test va bepul ta‘lim manbalari. Tibbiyot, moliya, marketing, IT va boshqa yo‘nalishlar." />
+@@include('components/head/index.html', {"title": "Home"})
 
-	<link rel="stylesheet" href="./css/main.css" />
-
-	<title>Kasbing - Home page</title>
-</head>
-
-<body style="opacity: 0; transition: all .5s linear">
+<body style="opacity: 0; transition: all .5s linear" class="page">
 	@@include('components/header/header.html')
 
 	@@include('components/pages/widget.html')
