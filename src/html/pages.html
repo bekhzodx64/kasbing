@@ -9,39 +9,7 @@
 	<main>
 		<div class="container">
 			<ul class="pages">
-				<li>
-					<a href="index.html">Home page</a>
-				</li>
-				<li>
-					<a href="blog.html">Blog page</a>
-				</li>
-				<li>
-					<a href="all-articles.html">All articles page</a>
-				</li>
-				<li>
-					<a href="single-article.html">Single article page</a>
-				</li>
-				<li class="disabled">
-					<a href="faq.html">FAQ page</a>
-				</li>
-				<li>
-					<a href="professions.html">Professions page</a>
-				</li>
-				<li>
-					<a href="search-results.html">Search results page</a>
-				</li>
-				<li>
-					<a href="universities.html">Universities page</a>
-				</li>
-				<li>
-					<a href="university-article.html">University article page</a>
-				</li>
-				<li>
-					<a href="universities-search.html">University search page</a>
-				</li>
-				<li>
-					<a href="faculty.html">Faculty page</a>
-				</li>
+				@@loop('components/temp/pages-link/index.html', 'data/pages.json')
 			</ul>
 		</div>
 	</main>

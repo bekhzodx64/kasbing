@@ -1,0 +1,50 @@
+[
+    {
+        "link": "index.html",
+        "title": "Home"
+    },
+    {
+        "link": "search.html",
+        "title": "Search (only professions)"
+    },
+    {
+        "link": "faq.html",
+        "title": "FAQ"
+    },
+    {
+        "link": "not-found.html",
+        "title": "Not found"
+    },
+    {
+        "link": "blog.html",
+        "title": "Blog"
+    },
+    {
+        "link": "blog-articles.html",
+        "title": "Blog articles"
+    },
+    {
+        "link": "blog-detail.html",
+        "title": "Blog detail"
+    },
+    {
+        "link": "universities.html",
+        "title": "Universities"
+    },
+    {
+        "link": "university-detail.html",
+        "title": "University detail"
+    },
+    {
+        "link": "faculty.html",
+        "title": "University faculty detail"
+    },
+    {
+        "link": "universities-search.html",
+        "title": "Universities search"
+    },
+    {
+        "link": "profession-detail.html",
+        "title": "Profession detail"
+    }
+]

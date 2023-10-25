@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="uz">
 
-@@include('components/head/index.html', {"title": "Universities"})
+@@include('components/head/index.html', {"title": "Professions"})
 
 <body style="opacity: 0; transition: all .5s linear" class="page">
 	@@include('components/header/header.html')
 	@@include('components/widget/index.html')
 
 	<main>
-		@@include('components/universities-intro/index.html')
-		@@include('components/universities/universities.html')
-		@@include('components/pagination/pagination.html')
-		@@include('components/related/related.html', {"title": "Top kasblar"})
+		@@include('components/professions-banner/professions-banner.html')
+		@@include('components/professions-content/professions-content.html')
+		@@include('components/related/related.html', {"title": "Tegishli kasblar"})
 	</main>
 
 	@@include('components/footer/footer.html')
