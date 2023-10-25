@@ -52,8 +52,14 @@
 		}
 
 		&__icon {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-shrink: 0;
 			width: 70px;
 			height: 70px;
+			padding: 12px;
+			border-radius: 10px;
 
 			img {
 				width: 100%;

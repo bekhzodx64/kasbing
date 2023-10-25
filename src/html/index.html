@@ -5,15 +5,15 @@
 
 <body style="opacity: 0; transition: all .5s linear" class="page">
 	@@include('components/header/header.html')
-
 	@@include('components/widget/index.html')
 
 	<main>
-		@@include('components/introduction/introduction.html')
-		@@include('components/profit/profit.html')
-		@@include('components/jobs-categories/jobs-categories.html')
-		@@include('components/statistics/statistics.html')
-		@@include('components/other-projects/other-projects.html')
+		<!-- @@include('components/introduction/introduction.html') -->
+		<!-- @@include('components/profit/profit.html') -->
+
+		@@include('components/pages/home/jobs-categories/index.html')
+		@@include('components/shared/statistics/index.html')
+		@@include('components/shared/other-projects/index.html')
 	</main>
 
 	@@include('components/footer/footer.html')

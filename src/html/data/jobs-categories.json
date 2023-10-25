@@ -1,0 +1,50 @@
+[
+    {
+        "color": "#E1E3FF",
+        "description": "(1 open Position)",
+        "icon": "./img/icons/budget.svg",
+        "title": "Accounting / Finance"
+    },
+    {
+        "color": "#FFDAAD",
+        "description": "(8 open Position)",
+        "icon": "./img/icons/design.svg",
+        "title": "Design"
+    },
+    {
+        "color": "#CDFCF0",
+        "description": "(1 open Position)",
+        "icon": "./img/icons/director.svg",
+        "title": "Director"
+    },
+    {
+        "color": "#FFCED2",
+        "description": "(1 open Position)",
+        "icon": "./img/icons/health.svg",
+        "title": "Health & Care"
+    },
+    {
+        "color": "#FCCFF2",
+        "description": "(1 open Position)",
+        "icon": "./img/icons/manager.svg",
+        "title": "PR manager"
+    },
+    {
+        "color": "#E0F7FF",
+        "description": "(1 open Position)",
+        "icon": "./img/icons/development.svg",
+        "title": "Development"
+    },
+    {
+        "color": "#FFE0BA",
+        "description": "(1 open Position)",
+        "icon": "./img/icons/architect.svg",
+        "title": "Architect"
+    },
+    {
+        "color": "#A1DDFF",
+        "description": "(1 open Position)",
+        "icon": "./img/icons/smm.svg",
+        "title": "SMM manager"
+    }
+]

@@ -1,17 +1,17 @@
 [
     {
-        "color": "blue",
+        "color": "#8AC4FE",
         "description": "Professions",
-        "number": "2000+"
+        "number": 2000
     },
     {
-        "color": "red",
+        "color": "#FF6774",
         "description": "Universities",
-        "number": "124+"
+        "number": 124
     },
     {
-        "color": "brown",
+        "color": "#F1B865",
         "description": "Сolleges and lyceums",
-        "number": "53+"
+        "number": 53
     }
 ]

@@ -1,24 +1,24 @@
 [
     {
-        "color": "skyblue",
+        "color": "linear-gradient(96.71deg,#6fb6fc -20.83%,#a3d0ff 143.46%)",
         "description": "Online encyclopedia where you will find everything",
         "icon": "./img/icons/book.svg",
         "title": "Sinaps"
     },
     {
-        "color": "oceanblue",
+        "color": "linear-gradient(110.45deg,#7b81ff 2.39%,#a2a5ff 116.79%)",
         "description": "Online encyclopedia where you will find everything",
         "icon": "./img/icons/periodic-table.svg",
         "title": "Periodic Table"
     },
     {
-        "color": "gold",
+        "color": "linear-gradient(91.83deg,#eba868 -23.91%,#ffdb5b 168.93%)",
         "description": "Online encyclopedia where you will find everything",
         "icon": "./img/icons/webinar.svg",
         "title": "Education Project"
     },
     {
-        "color": "peach",
+        "color": "linear-gradient(132.86deg,#fe6673 9.87%,#fe9777 74.06%)",
         "description": "Online encyclopedia where you will find everything",
         "icon": "./img/icons/job-search.svg",
         "title": "Job Searching"
