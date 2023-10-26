@@ -2,8 +2,11 @@
 	<div class="container">
 		<h2 class="section-title">@@title</h2>
 
-		<div class="related-grid">
-			@@loop('related-card.html', './components/related/related.json')
+		<div class="related-slider swiper">
+			<div class="swiper-wrapper">
+				@@loop('related-card.html', './components/related/related.json')
+			</div>
 		</div>
+
 	</div>
 </section>

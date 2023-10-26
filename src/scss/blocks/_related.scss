@@ -2,12 +2,60 @@
 	padding: 80px 0 200px;
 	background-color: $secondary;
 
-	&-grid {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		gap: 30px;
+	&-slider {
 		margin-top: 80px;
+		position: relative;
 	}
+
+	// &-navigation {
+	// 	&__prev {
+	// 		position: absolute;
+	// 		top: 50%;
+	// 		left: -50px;
+	// 		transform: translateY(-50%);
+	// 		z-index: 2;
+
+	// 		border: none;
+	// 		outline: none;
+	// 		background-color: transparent;
+	// 		width: 40px;
+	// 		height: 40px;
+	// 		border-radius: 100px;
+	// 		align-items: center;
+	// 		justify-content: center;
+	// 		cursor: pointer;
+
+	// 		display: none;
+
+	// 		@include breakpoint(xl) {
+	// 			display: flex;
+	// 		}
+	// 	}
+
+	// 	&__next {
+	// 		position: absolute;
+	// 		top: 50%;
+	// 		right: -50px;
+	// 		transform: translateY(-50%);
+	// 		z-index: 2;
+
+	// 		border: none;
+	// 		outline: none;
+	// 		background-color: transparent;
+	// 		width: 40px;
+	// 		height: 40px;
+	// 		border-radius: 100px;
+	// 		align-items: center;
+	// 		justify-content: center;
+	// 		cursor: pointer;
+
+	// 		display: none;
+
+	// 		@include breakpoint(xl) {
+	// 			display: flex;
+	// 		}
+	// 	}
+	// }
 
 	&-card {
 		display: flex;
@@ -17,7 +65,17 @@
 		padding: 30px 25px;
 		width: 100%;
 
-		max-width: 410px;
+		@include breakpoint(sm) {
+			max-width: 390px;
+		}
+
+		@include breakpoint(lg) {
+			max-width: none;
+		}
+
+		@include breakpoint(xl) {
+			max-width: 410px;
+		}
 
 		&__tag {
 			background-color: $white;

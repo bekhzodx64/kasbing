@@ -19,5 +19,26 @@
         "price": "7.000.000 – 20.000.000",
         "tag": "Boshqalar",
         "title": "Bioinjener"
+    },
+    {
+        "color": "#60B3FF",
+        "image": "./img/illustrations/money.svg",
+        "price": "3.000.000 – 12.000.000",
+        "tag": "Boshqalar",
+        "title": "Loyiha haqida"
+    },
+    {
+        "color": "#3EECDE",
+        "image": "./img/illustrations/star.svg",
+        "price": "3.000.000 – 6.000.000",
+        "tag": "Boshqalar",
+        "title": "Meteorolog"
+    },
+    {
+        "color": "#DDDEE0",
+        "image": "./img/illustrations/microscope.svg",
+        "price": "7.000.000 – 20.000.000",
+        "tag": "Boshqalar",
+        "title": "Bioinjener"
     }
 ]
