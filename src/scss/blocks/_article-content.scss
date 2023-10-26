@@ -1,4 +1,10 @@
 .article-content {
+	padding-top: 24px;
+
+	@include breakpoint(lg) {
+		padding-top: 0;
+	}
+
 	&__inner {
 		display: flex;
 		gap: 60px;

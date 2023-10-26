@@ -3,6 +3,11 @@
 	max-width: 410px;
 	flex-shrink: 0;
 	padding-top: 30px;
+	display: none;
+
+	@include breakpoint(lg) {
+		display: block;
+	}
 
 	h2 {
 		color: $black;

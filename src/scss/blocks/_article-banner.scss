@@ -1,12 +1,21 @@
 .article-banner {
-	padding: 50px 0;
+	@include breakpoint(lg) {
+		padding: 50px 0;
+	}
 
 	&__content {
 		display: flex;
-		gap: 30px;
+		flex-direction: column-reverse;
 		justify-content: space-between;
-		padding: 60px 70px;
-		border-radius: 20px;
+		gap: 30px;
+		margin: 0 -20px;
+		padding: 30px 22px;
+
+		@include breakpoint(lg) {
+			padding: 60px 70px;
+			border-radius: 20px;
+			flex-direction: row;
+		}
 	}
 
 	&__title {

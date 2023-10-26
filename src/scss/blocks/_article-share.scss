@@ -5,9 +5,13 @@
 
 	&__title {
 		color: #3c3c3c;
-		font-size: 16px;
 		font-weight: 600;
 		letter-spacing: 0.64px;
+		font-size: 14px;
+
+		@include breakpoint(sm) {
+			font-size: 16px;
+		}
 	}
 
 	&__items {
@@ -17,21 +21,39 @@
 	}
 
 	&__item {
-		display: flex;
-		align-items: center;
 		gap: 10px;
 		color: $accent-color;
-		padding: 8px 14px;
 		background-color: #e9e9e9;
-		border-radius: 10px;
-		font-size: 16px;
 		font-weight: 400;
 		letter-spacing: 0.64px;
+
+		border-radius: 100px;
+		width: 32px;
+		height: 32px;
+		padding: 6px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		@include breakpoint(sm) {
+			width: auto;
+			height: auto;
+			padding: 8px 14px;
+			border-radius: 10px;
+		}
 
 		img {
 			width: 20px;
 			height: 20px;
 			object-fit: scale-down;
+		}
+
+		span {
+			display: none;
+
+			@include breakpoint(sm) {
+				display: block;
+			}
 		}
 	}
 }

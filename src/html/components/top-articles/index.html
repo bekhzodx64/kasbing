@@ -6,9 +6,14 @@
 				<p class="top-articles__description">Bu hafta davomida eng ko‘p o‘qilgan maqolalar ketma-ketligi.</p>
 			</div>
 
-			<div class="top-articles__grid">
-				@@loop('../blog-card/blog-card.html', 'data/top-articles.json')
+			<div class="top-articles__slider" style="overflow-x: hidden;">
+				<div class="swiper-wrapper">
+					@@loop('../blog-card/blog-card.html', 'data/top-articles.json')
+				</div>
 			</div>
+
 		</div>
+
 	</div>
+
 </div>
