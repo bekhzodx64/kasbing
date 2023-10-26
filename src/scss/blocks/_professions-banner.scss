@@ -1,14 +1,29 @@
 .professions-banner {
-	padding: 76px 0 100px;
 	background-color: $white;
+
+	@include breakpoint(lg) {
+		padding: 76px 0 100px;
+	}
 
 	&__container {
 		display: flex;
+		flex-direction: column-reverse;
 		align-items: center;
 		justify-content: space-between;
-		border-radius: 20px;
-		padding: 30px 30px 30px 80px;
 		aspect-ratio: 15/5;
+		padding: 30px 10px;
+
+		margin: 0 -20px;
+
+		@include breakpoint(md) {
+			padding: 50px 20px;
+		}
+
+		@include breakpoint(lg) {
+			border-radius: 20px;
+			flex-direction: row;
+			padding: 30px 30px 30px 80px;
+		}
 	}
 
 	&__info {
@@ -19,8 +34,12 @@
 
 	&__title {
 		font-weight: 600;
-		font-size: 48px;
+		font-size: 30px;
 		@include truncate(2);
+
+		@include breakpoint(md) {
+			font-size: 48px;
+		}
 	}
 
 	&__tags {
