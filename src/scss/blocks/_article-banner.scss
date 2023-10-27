@@ -20,8 +20,20 @@
 
 	&__title {
 		color: $black;
-		font-size: 64px;
 		font-weight: 700;
+		font-size: 24px;
+
+		@include breakpoint(sm) {
+			font-size: 36px;
+		}
+
+		@include breakpoint(md) {
+			font-size: 56px;
+		}
+
+		@include breakpoint(lg) {
+			font-size: 64px;
+		}
 	}
 
 	&__description {
@@ -74,6 +86,7 @@
 	&__image {
 		aspect-ratio: 1/1;
 		max-width: 330px;
+		margin: 0 auto;
 
 		img {
 			width: 100%;
