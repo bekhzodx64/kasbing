@@ -3,7 +3,7 @@
 
 @@include('components/head/index.html', {"title": "Home"})
 
-<body style="opacity: 0; transition: all .5s linear" class="page">
+<body style="opacity: 0; transition: opacity .5s linear" class="page">
 	@@include('components/header/header.html')
 	@@include('components/widget/index.html')
 
@@ -14,6 +14,10 @@
 		@@include('components/shared/statistics/index.html')
 		@@include('components/shared/other-projects/index.html')
 	</main>
+
+	<div class="menu">
+		test
+	</div>
 
 	@@include('components/footer/footer.html')
 

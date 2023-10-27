@@ -1,7 +1,7 @@
 [
     {
         "link": "index.html",
-        "title": "Home"
+        "title": "Home (completed)"
     },
     {
         "link": "search.html",
@@ -21,11 +21,11 @@
     },
     {
         "link": "blog-articles.html",
-        "title": "Blog articles"
+        "title": "Blog articles (completed)"
     },
     {
         "link": "blog-detail.html",
-        "title": "Blog detail"
+        "title": "Blog detail (FIX)"
     },
     {
         "link": "universities.html",
@@ -45,6 +45,6 @@
     },
     {
         "link": "profession-detail.html",
-        "title": "Profession detail"
+        "title": "Profession detail (completed)"
     }
 ]

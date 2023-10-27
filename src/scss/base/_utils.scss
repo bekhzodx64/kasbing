@@ -27,6 +27,10 @@
 
 .no-scroll {
 	overflow-y: hidden;
+
+	@include breakpoint(md) {
+		padding-right: 16px;
+	}
 }
 
 .no-select {

@@ -1,0 +1,11 @@
+.menu {
+	@include absolute(fixed, 0, 0, 0, 0, 20);
+	background-color: $accent-color;
+	transform: translateX(100%);
+
+	transition: transform 0.4s linear;
+
+	&.show {
+		transform: translateX(0);
+	}
+}
