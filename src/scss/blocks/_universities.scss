@@ -254,14 +254,34 @@
 
 	&-professions__table {
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: 1fr;
 		gap: 32px;
+
+		@include breakpoint(md) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		@include breakpoint(lg) {
+			grid-template-columns: repeat(3, 1fr);
+		}
 	}
 
 	&-faculty__table {
 		padding: 54px 0;
 		display: grid;
-		grid-template-columns: repeat(4, 1fr);
+		grid-template-columns: 1fr;
 		gap: 24px 30px;
+
+		@include breakpoint(md) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		@include breakpoint(lg) {
+			grid-template-columns: repeat(3, 1fr);
+		}
+
+		@include breakpoint(xl) {
+			grid-template-columns: repeat(4, 1fr);
+		}
 	}
 }

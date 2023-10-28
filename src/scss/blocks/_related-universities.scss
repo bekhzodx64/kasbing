@@ -2,11 +2,8 @@
 	padding: 30px 0 150px;
 	background-color: #f5f9fe;
 
-	&__grid {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
+	&__slider {
 		margin-top: 90px;
-		gap: 30px;
 	}
 
 	&__card {

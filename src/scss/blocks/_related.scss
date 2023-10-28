@@ -65,9 +65,9 @@
 		padding: 30px 25px;
 		width: 100%;
 
-		@include breakpoint(sm) {
-			max-width: 390px;
-		}
+		// @include breakpoint(sm) {
+		// 	max-width: 390px;
+		// }
 
 		@include breakpoint(lg) {
 			max-width: none;

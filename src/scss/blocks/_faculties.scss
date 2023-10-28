@@ -4,19 +4,39 @@
 	&-inner {
 		display: flex;
 		flex-direction: column;
-		gap: 70px;
+		gap: 36px;
+
+		@include breakpoint(md) {
+			gap: 70px;
+		}
 	}
 
 	&-title {
 		text-align: center;
-		font-size: 36px;
 		font-weight: 600;
+		font-size: 20px;
+
+		@include breakpoint(sm) {
+			font-size: 36px;
+		}
 	}
 
 	&-grid {
 		display: grid;
-		grid-template-columns: repeat(4, 1fr);
+		grid-template-columns: 1fr;
 		gap: 24px 30px;
+
+		@include breakpoint(sm) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		@include breakpoint(lg) {
+			grid-template-columns: repeat(3, 1fr);
+		}
+
+		@include breakpoint(xl) {
+			grid-template-columns: repeat(4, 1fr);
+		}
 	}
 
 	&-card {
@@ -59,11 +79,19 @@
 
 		a {
 			color: $white;
-			font-size: 20px;
 			font-weight: 600;
 			background-color: $accent-color;
 			padding: 24px 80px;
 			border-radius: 10px;
+
+			width: 100%;
+			font-size: 14px;
+			text-align: center;
+
+			@include breakpoint(sm) {
+				width: auto;
+				font-size: 20px;
+			}
 		}
 	}
 }

@@ -1,7 +1,7 @@
 import Swiper from 'swiper'
 
 function relatedSlider() {
-	const swiper = new Swiper('.related-slider', {
+	new Swiper('.related-slider', {
 		slidesPerView: 1.1,
 		spaceBetween: 20,
 		breakpoints: {
