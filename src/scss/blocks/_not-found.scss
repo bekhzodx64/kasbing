@@ -1,0 +1,51 @@
+.not-found {
+	background-color: #676eff;
+	padding: 170px 0 120px;
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__content {
+		width: 50%;
+
+		h1 {
+			color: $white;
+			font-size: 256px;
+			font-weight: 700;
+		}
+
+		h2 {
+			color: $white;
+			font-size: 48px;
+			font-weight: 400;
+			text-transform: uppercase;
+			text-align: center;
+		}
+
+		p {
+			color: $white;
+			font-size: 20px;
+			font-weight: 400;
+			margin-top: 35px;
+			line-height: 1.4;
+		}
+	}
+
+	&__image {
+		width: 50%;
+
+		p {
+			background-color: #d5d5d5;
+			aspect-ratio: 4/3;
+			font-size: 20px;
+
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 16px;
+			font-weight: 300;
+		}
+	}
+}
