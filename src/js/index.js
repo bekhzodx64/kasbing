@@ -6,8 +6,9 @@ import relatedSlider from './modules/related-slider'
 import relatedUniversities from './modules/related-universities'
 import studentsSlider from './modules/students-slider'
 import topArticlesSlider from './modules/top-articles-slider'
+import universityArticleSlider from './modules/university-article-slider'
 
-import 'swiper/css'
+import 'swiper/css/bundle'
 
 document.addEventListener('DOMContentLoaded', () => {
 	showContent()
@@ -19,4 +20,5 @@ document.addEventListener('DOMContentLoaded', () => {
 	topArticlesSlider()
 	relatedUniversities()
 	studentsSlider()
+	universityArticleSlider()
 })
