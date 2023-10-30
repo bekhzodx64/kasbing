@@ -60,6 +60,8 @@
 			&:first-child {
 				display: flex;
 				justify-content: center;
+				text-wrap: balance;
+				text-align: center;
 			}
 
 			@include breakpoint(lg) {
