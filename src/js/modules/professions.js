@@ -3,7 +3,7 @@ function professionsLink() {
 
 	links.forEach((link) => {
 		link.addEventListener('click', (e) => {
-			e.preventDefault()
+			// e.preventDefault()
 
 			links.forEach((element) => {
 				element.classList.remove('active')

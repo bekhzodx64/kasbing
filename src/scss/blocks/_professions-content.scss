@@ -28,10 +28,10 @@
 			gap: 34px;
 			flex-direction: column;
 			border-bottom: none;
-			// position: sticky;
-			// top: 96px;
-			// left: 0;
-			// background-color: $white;
+			position: sticky;
+			top: 96px;
+			left: 0;
+			background-color: $white;
 		}
 	}
 
@@ -154,14 +154,15 @@
 			line-height: 1.4;
 		}
 
-		// &-main {
-		// 	display: none;
-		// }
+		&-main {
+			scroll-margin-top: 90px;
+		}
 
 		&-requirements {
 			display: flex;
 			flex-direction: column;
 			gap: 64px;
+			scroll-margin-top: 90px;
 
 			&__wrapper {
 				display: flex;
@@ -187,7 +188,7 @@
 							border-radius: 100%;
 							background-color: $accent-color;
 
-							@include absolute(absolute, 50%, auto, auto, 3px);
+							@include absolute(absolute, 50%, auto, auto, 2.5px);
 							transform: translateY(-50%);
 						}
 
@@ -209,9 +210,12 @@
 		}
 
 		&-advantages {
+			scroll-margin-top: 90px;
 		}
 
 		&-places {
+			scroll-margin-top: 90px;
+
 			&__usefull-links {
 				display: flex;
 				flex-direction: column;
@@ -261,7 +265,7 @@
 							border-radius: 100%;
 							background-color: $accent-color;
 
-							@include absolute(absolute, 50%, auto, auto, 3px);
+							@include absolute(absolute, 50%, auto, auto, 2.5px);
 							transform: translateY(-50%);
 						}
 
@@ -283,6 +287,8 @@
 		}
 
 		&-links {
+			scroll-margin-top: 90px;
+
 			.link-description {
 				display: flex;
 				flex-direction: column;

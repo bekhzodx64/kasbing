@@ -2,31 +2,31 @@
     {
         "active": "active",
         "icon": "./img/icons/gem.svg",
-        "link": "#",
+        "link": "#basic",
         "title": "Umumiy ma'lumot"
     },
     {
         "active": "",
         "icon": "./img/icons/document.svg",
-        "link": "#",
+        "link": "#requirements",
         "title": "Talab, koʻnikma va majburiyatlar"
     },
     {
         "active": "",
         "icon": "./img/icons/benefits.svg",
-        "link": "#",
+        "link": "#advantages",
         "title": "Ijobiy va salbiy tomonlari"
     },
     {
         "active": "",
         "icon": "./img/icons/case.svg",
-        "link": "#",
+        "link": "#places",
         "title": "Qayerda ishlash mumkin?"
     },
     {
         "active": "",
         "icon": "./img/icons/link.svg",
-        "link": "#",
+        "link": "#links",
         "title": "Foydali havolalar"
     }
 ]
