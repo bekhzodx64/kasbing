@@ -1,6 +1,6 @@
 import accordion from './modules/accordion'
 import showContent from './modules/base'
-// import mobileMenu from './modules/menu'
+import mobileMenu from './modules/menu'
 import professionsLink from './modules/professions'
 import relatedSlider from './modules/related-slider'
 import relatedUniversities from './modules/related-universities'
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	showContent()
 	professionsLink()
 	accordion()
-	// mobileMenu()
+	mobileMenu()
 
 	relatedSlider()
 	topArticlesSlider()
