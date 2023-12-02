@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+@@include('components/document-head/index.html', {"title": "Blog articles"})
+
+<body style="opacity: 0; transition: all .5s linear" class="page">
+
+	<!-- Header -->
+	@@include('components/header/header.html')
+
+	<!-- Widget -->
+	@@include('components/widget/index.html')
+
+	<main>
+		<div class="articles">
+			<div class="container">
+				@@include('components/breadcrumbs/index.html')
+
+				<div class="articles-header">
+					<h1>Workplace</h1>
+
+					<div class="articles-header__tags">
+						<a href="#" class="articles-header__tag">
+							<div class="articles-header__tag-img" style="background-color: #FFBB56;">
+								<img src="./img/article-tags/case.png" alt="">
+							</div>
+							<span>Job</span>
+						</a>
+						<a href="#" class="articles-header__tag">
+							<div class="articles-header__tag-img" style="background-color: #FFBB56;">
+								<img src="./img/article-tags/case.png" alt="">
+							</div>
+							<span>Interview</span>
+						</a>
+						<a href="#" class="articles-header__tag active">
+							<div class="articles-header__tag-img" style="background-color: #FFBB56;">
+								<img src="./img/article-tags/case.png" alt="">
+							</div>
+							<span>Workplace</span>
+						</a>
+						<a href="#" class="articles-header__tag">
+							<div class="articles-header__tag-img" style="background-color: #FFBB56;">
+								<img src="./img/article-tags/case.png" alt="">
+							</div>
+							<span>Kasbingizni qanday tanlash kerak</span>
+						</a>
+					</div>
+				</div>
+
+				<div class="articles-grid">
+					@@loop('components/article-card/article-card.html', 'data/articles.json')
+				</div>
+
+				<!-- @@include('components/pagination/pagination.html') -->
+			</div>
+		</div>
+	</main>
+
+	<!-- Mobile menu -->
+	@@include('components/shared/mobile-menu/index.html')
+
+	<!-- Footer -->
+	@@include('components/footer/footer.html')
+
+	<script src="./js/index.bundle.js"></script>
+</body>
+
+</html>

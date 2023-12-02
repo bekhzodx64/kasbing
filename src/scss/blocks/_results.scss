@@ -3,8 +3,17 @@
 
 	&-grid {
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		gap: 50px 30px;
+		gap: 20px;
+
+		@include breakpoint(lg) {
+			grid-template-columns: repeat(2, 1fr);
+			gap: 20px 30px;
+		}
+
+		@include breakpoint(xl) {
+			grid-template-columns: repeat(3, 1fr);
+			gap: 50px 30px;
+		}
 	}
 
 	&-pagination {

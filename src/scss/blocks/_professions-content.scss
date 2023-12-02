@@ -92,6 +92,20 @@
 		margin-top: 55px;
 		// grid-column-start: 1;
 
+		&--desktop {
+			display: none;
+
+			@include breakpoint(lg) {
+				display: flex;
+			}
+		}
+
+		&--mobile {
+			@include breakpoint(lg) {
+				display: none;
+			}
+		}
+
 		&-title {
 			font-weight: 500;
 			font-size: 24px;

@@ -1,0 +1,11 @@
+<div class="results">
+	<div class="container">
+		<div class="results-grid">
+			@@loop('../../shared/related/related-card.html', 'data/search-results.json')
+		</div>
+
+		<div class="results-pagination">
+			@@include('../../shared/pagination/pagination.html')
+		</div>
+	</div>
+</div>

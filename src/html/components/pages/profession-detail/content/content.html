@@ -1,0 +1,27 @@
+<div class="professions-content">
+	<div class="container">
+		<div class="professions-content__inner">
+			<ul class="professions-content__list">
+				@@loop('sidebar-link.html', './components/pages/profession-detail/content/sidebar.json')
+
+				<div class="professions-content__tags professions-content__tags--desktop">
+					<h3 class="professions-content__sidebar-tags-title">Tags</h3>
+					<ul>@@loop('tag.html', './components/pages/profession-detail/content/tags.json')</ul>
+				</div>
+			</ul>
+
+			<div class="professions-content__tags professions-content__tags--mobile">
+				<h3 class="professions-content__sidebar-tags-title">Tags</h3>
+				<ul>@@loop('tag.html', './components/pages/profession-detail/content/tags.json')</ul>
+			</div>
+
+			<div class="professions-content__content">
+				@@include('main.html')
+				@@include('requirements.html')
+				@@include('advantages.html')
+				@@include('places.html')
+				@@include('links.html')
+			</div>
+		</div>
+	</div>
+</div>

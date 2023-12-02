@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="uz">
 
-@@include('components/head/index.html', {"title": "Pages"})
+@@include('components/document-head/index.html', {"title": "Pages"})
 
 <body style="opacity: 0; transition: all .5s linear" class="page">
-	@@include('components/header/header.html')
+	@@include('components/shared/header/index.html')
 
 	<main>
 		<div class="container">
@@ -16,7 +16,7 @@
 
 	@@include('components/shared/mobile-menu/index.html')
 
-	@@include('components/footer/footer.html')
+	@@include('components/shared/footer/index.html')
 
 	<script src="./js/index.bundle.js"></script>
 </body>

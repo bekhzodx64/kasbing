@@ -1,23 +1,34 @@
 <!DOCTYPE html>
 <html lang="uz">
 
-@@include('components/head/index.html', {"title": "Professions"})
+@@include('components/document-head/index.html', {"title": "Professions"})
 
 <body style="opacity: 0; transition: all .5s linear" class="page">
-	@@include('components/header/header.html')
+	<!-- Header -->
+	@@include('components/shared/header/index.html')
+
+	<!-- Widget -->
 	@@include('components/widget/index.html')
 
 	<main>
-		@@include('components/professions-banner/professions-banner.html')
-		@@include('components/professions-content/professions-content.html')
-		@@include('components/related/related.html', {"title": "Tegishli kasblar"})
+		<!-- Banner -->
+		@@include('components/pages/profession-detail/banner/banner.html')
+
+		<!-- Content -->
+		@@include('components/pages/profession-detail/content/content.html')
+
+		<!-- Related professions slider -->
+		@@include('components/shared/related/related.html', {"title": "Tegishli kasblar"})
 	</main>
 
+	<!-- Mobile menu -->
 	@@include('components/shared/mobile-menu/index.html')
 
-	@@include('components/footer/footer.html')
+	<!-- Footer -->
+	@@include('components/shared/footer/index.html')
 
-	<script src="./js/index.bundle.js"></script>
+	<script src="./js/index.bundle.js" defer></script>
+	<script src="./js/professionDetail.bundle.js" defer></script>
 </body>
 
 </html>

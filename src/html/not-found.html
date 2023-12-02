@@ -1,34 +1,27 @@
 <!DOCTYPE html>
 <html lang="uz">
 
-@@include('components/head/index.html', {"title": "Not Found"})
+@@include('components/document-head/index.html', {"title": "Not Found"})
 
 <body style="opacity: 0; transition: all .5s linear" class="page">
-	@@include('components/header/header.html')
+	<!-- Header -->
+	@@include('components/shared/header/index.html')
+
+	<!-- Widget -->
 	@@include('components/widget/index.html')
 
 	<main>
-		<div class="not-found">
-			<div class="container">
-				<div class="not-found__inner">
-					<div class="not-found__content">
-						<h1>404</h1>
-						<h2>sahifa topilmadi</h2>
-						<p>Siz qidirayotgan sahifa topilmadi. Bosh sahifaga qayting yoki ko'chirilgan sahifalar haqida bizga xabar bering</p>
-					</div>
-					<div class="not-found__image">
-						<p>placeholder</p>
-					</div>
-				</div>
-			</div>
-		</div>
+		<!-- Main content -->
+		@@include('components/pages/not-found/content.html')
 	</main>
 
+	<!-- Mobile menu -->
 	@@include('components/shared/mobile-menu/index.html')
 
-	@@include('components/footer/footer.html')
+	<!-- Footer -->
+	@@include('components/shared/footer/index.html')
 
-	<script src="./js/index.bundle.js"></script>
+	<script src="./js/index.bundle.js" defer></script>
 </body>
 
 </html>

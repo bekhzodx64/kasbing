@@ -1,0 +1,33 @@
+<div class="universities">
+	<div class="container">
+		<div class="universities-table">
+			<div class="heading">
+				<div>Universitet nomi</div>
+				<div>Shahar</div>
+				<div>Kirish bali</div>
+				<div>To‘lov miqdori (UZS)</div>
+			</div>
+
+			<div class="data">
+				@@loop('../../table-row/table-row.html', 'components/shared/universities/universities.json')
+			</div>
+		</div>
+	</div>
+
+	<div class="universities-pagination">
+		@@include('../pagination/pagination.html')
+	</div>
+
+	<div class="container">
+		<div class="universities-professions__table">
+			@@loop('../related/related-card.html', 'data/universities-search-professions.json')
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="universities-faculty__table">
+			@@loop('../../faculties-card/faculties-card.html', 'components/faculties/faculties.json')
+		</div>
+	</div>
+
+</div>

@@ -1,25 +1,39 @@
 <!DOCTYPE html>
 <html lang="uz">
 
-@@include('components/head/index.html', {"title": "Home"})
+@@include('components/document-head/index.html', {"title": "Home"})
 
 <body style="opacity: 0; transition: opacity .5s linear" class="page">
-	@@include('components/header/header.html')
+	<!-- Header -->
+	@@include('components/shared/header/index.html')
+
+	<!-- Widget -->
 	@@include('components/widget/index.html')
 
 	<main>
+		<!-- Intro -->
 		@@include('components/pages/home/intro/index.html')
+
+		<!-- What we can give? -->
 		@@include('components/pages/home/profit/index.html')
+
+		<!-- Popular job categories -->
 		@@include('components/pages/home/jobs-categories/index.html')
+
+		<!-- Statistics -->
 		@@include('components/shared/statistics/index.html')
+
+		<!-- Other projects -->
 		@@include('components/shared/other-projects/index.html')
 	</main>
 
+	<!-- Mobile menu -->
 	@@include('components/shared/mobile-menu/index.html')
 
-	@@include('components/footer/footer.html')
+	<!-- Footer -->
+	@@include('components/shared/footer/index.html')
 
-	<script src="./js/index.bundle.js"></script>
+	<script src="./js/index.bundle.js" defer></script>
 </body>
 
 </html>

@@ -1,7 +1,8 @@
 const config = {
 	mode: 'production',
 	entry: {
-		index: './src/js/index.js'
+		index: './src/js/index.js',
+		professionDetail: './src/js/profession-detail.js',
 		// contacts: './src/js/contacts.js',
 		// about: './src/js/about.js',
 	},
@@ -16,6 +17,6 @@ const config = {
 			},
 		],
 	},
-};
+}
 
-module.exports = config;
+module.exports = config

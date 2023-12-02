@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="uz">
 
-@@include('components/head/index.html', {"title": "University detail"})
+@@include('components/document-head/index.html', {"title": "University detail"})
 
 <body style="opacity: 0; transition: all .5s linear" class="page">
-	@@include('components/header/header.html')
+	<!-- Header -->
+	@@include('components/shared/header/index.html')
+
+	<!-- Widget -->
 	@@include('components/widget/index.html')
 
 	<main>
-		@@include('components/university-article-intro/index.html')
+		<!-- @@include('components/university-article-intro/index.html')
 		@@include('components/faculties/faculties.html')
 		@@include('components/students-life/students-life.html')
-		@@include('components/related-universities/related-universities.html', {"title": "O’xshash universitetler"})
+		@@include('components/related-universities/related-universities.html', {"title": "O’xshash universitetler"}) -->
 	</main>
 
+	<!-- Mobile menu -->
 	@@include('components/shared/mobile-menu/index.html')
 
-	@@include('components/footer/footer.html')
+	<!-- Footer -->
+	@@include('components/shared/footer/index.html')
 
-	<script src="./js/index.bundle.js"></script>
+	<script src="./js/index.bundle.js" defer></script>
 </body>
 
 </html>

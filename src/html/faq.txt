@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+@@include('components/document-head/index.html', {"title": "FAQ"})
+
+<body style="opacity: 0; transition: all .5s linear" class="page">
+	@@include('components/header/header.html')
+
+	@@include('components/widget/index.html')
+
+	<main>
+
+		<div class="faq-banner">
+
+		</div>
+
+		<div class="faq">
+			<div class="container">
+				<div class="faq-description">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae augue vel eros sollicitudin blandit. Aliquam velit tortor, feugiat vel turpis nec, pellentesque suscipit ligula. Suspendisse semper nisl a finibus feugiat. Etiam elementum mi nec dignissim consectetur. Aliquam nec commodo est. Ut mollis, libero a volutpat ultricies, purus purus laoreet mauris, eget venenatis enim dolor sit amet ipsum. Integer ut faucibus felis. Proin magna nisi, suscipit vitae augue eget, pellentesque auctor felis.</p>
+					<p><a href="#" draggable="false" class="no-select">Careercaps.uz </a> - this is what will help you to make the right choice, your future depends on your choice. Everyone can find the profession of their dreams. Here you can find</p>
+				</div>
+
+				<div class="faq-grid">
+					@@loop('components/faq-card/faq-card.html', 'data/faq.json')
+				</div>
+			</div>
+		</div>
+
+		<!-- @@include('components/statistics/statistics.html') -->
+		<!-- @@include('components/other-projects/other-projects.html') -->
+
+	</main>
+
+	@@include('components/shared/mobile-menu/index.html')
+
+	@@include('components/footer/footer.html')
+
+	<script src="./js/index.bundle.js"></script>
+</body>
+
+</html>
